@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 
 app.listen(8080);
 
-mongoose.connect('mongodb+srv://mariaclara6041:#Melim1705@cluster0.rnujtmt.mongodb.net/Node-API')
+mongoose.connect('mongodb+srv://mariaclara6041:,passord>@cluster0.rnujtmt.mongodb.net/Node-API')
 .then(() => {
     console.log('conectado com o dba')
 
