@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  font-family: "Rubik", sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  padding-top: 20px;
+}
+
+.logo {
+  width: 200px;
+}
+
+#tituloFachada {
+  color: #e85850;
+  font-size: 2.5em;
+  font-weight: 200;
+}
+
+.menu-section {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 30px;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.menu-item {
+  background-color: #dfdfdf;
+  border-radius: 20px;
+  width: 300px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+  border: solid;
+  border-color: #e85850;
+}
+
+.desc {
+  mix-blend-mode: hard-light;
+  font-size: small;
+}
+
+h2 {
+  text-align: center;
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.botao {
+  background-color: #e85850;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+  margin-top: 20px;
+}
+
+.botao:hover {
+  background-color: #d0473d;
+}
+
+.botaof {
+  display: block;
+  width: 200px;
+  height: 70px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #232654;
+  color: white;
+  padding: 10px 0;
+  border-radius: 40px;
+  font-family: "Rubik", sans-serif;
+  font-size: larger;
+  cursor: pointer;
+}
+
+hr {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+  align-items: center;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+.pedido-container {
+  text-align: -webkit-center;
+  color: #333;
+}
+
+.saidaPedido ul {
+  list-style: none;
+  padding: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  max-width: 600px;
+  border-radius: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: white;
+  font-size: 0.9em;
+  border-top: 5px solid #e85850;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 5px 0;
+}

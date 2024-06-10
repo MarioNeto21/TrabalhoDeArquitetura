@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardápio Online</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="logo"
+        src="https://seeklogo.com/images/B/burger-fast-food-logo-46FC9195F3-seeklogo.com.png"
+        alt="Logo"
+      />
+      <h1 id="tituloFachada">Cardápio Online</h1>
+    </header>
+
+    <section class="menu-section">
+      <h2>Comidas</h2>
+
+      <div class="menu-items">
+        <!-- Itens do cardápio -->
+        <!-- Cada item foi transformado em um 'article' para melhor semântica -->
+        <article class="menu-item" data-item="hotdog">
+          <img
+            src="https://www.baratocoletivo.com.br/static/team/2012/0713/13422322584907.jpg"
+            alt="Hot-dog"
+          />
+          <div>
+            <h3 class="titulo">Hot-dog</h3>
+            <p class="desc">Pão, salsicha, milho, molho de tomate e maionese</p>
+          </div>
+          <button class="botao" onclick="adicionarAoPedido('Hot-dog')">
+            Adicionar
+          </button>
+        </article>
+
+        <article class="menu-item" data-item="pizza">
+          <img
+            src="https://p2.trrsf.com/image/fget/cf/1200/900/middle/images.terra.com/2023/07/10/dia-da-pizza-skkhweuqjcrq.jpg"
+            alt="Hot-dog"
+          />
+          <div>
+            <h3 class="titulo">Pizza</h3>
+            <p class="desc">Frago com nuggets, bordas de chocolate</p>
+          </div>
+          <button class="botao" onclick="adicionarAoPedido('Pizza')">
+            Adicionar
+          </button>
+        </article>
+
+        <article class="menu-item" data-item="esfirra">
+          <img
+            src="https://i.pinimg.com/736x/dd/db/d6/dddbd6efe41b4d2fb907d5c3d7833723.jpg"
+            alt="Hot-dog"
+          />
+          <div>
+            <h3 class="titulo">Esfirra</h3>
+            <p class="desc">Carne, Frango, Carne de Sol, Etc...</p>
+          </div>
+          <button class="botao" onclick="adicionarAoPedido('Esfirra')">
+            Adicionar
+          </button>
+        </article>
+
+        <article class="menu-item" data-item="nuggets">
+          <img
+            src="https://p2.trrsf.com/image/fget/cf/1200/1200/middle/images.terra.com/2023/07/03/istock-1313732571-qhkli3jn9o3a.jpg"
+            alt="Hot-dog"
+          />
+          <div>
+            <h3 class="titulo">Nuggets</h3>
+            <p class="desc">Assas de Frango Fritas</p>
+          </div>
+          <button class="botao" onclick="adicionarAoPedido('Nuggets')">
+            Adicionar
+          </button>
+        </article>
+
+        <article class="menu-item" data-item="xburguer">
+          <img
+            src="https://thumb-cdn.soluall.net/prod/shp_products/sp1280fw/0c64c901-182d-4eca-b260-c28e4e5c8f99/9b1c193d-9b1f-43ce-b6e1-656df83fd637.jpg"
+            alt="X-Burguer"
+          />
+          <div>
+            <h3>X-Burguer</h3>
+            <p class="desc">
+              Pão Brioche, carne de hambúrguer, alface, tomate, ketchup e
+              maionese
+            </p>
+          </div>
+          <button class="botao" onclick="adicionarAoPedido('X-burguer')">
+            Adicionar
+          </button>
+        </article>
+
+        <article class="menu-item" data-item="pastel">
+          <img
+            src="https://s2-receitas.glbimg.com/3MhTZmEn-vxeIGovC29jalC2ctQ=/0x0:653x400/984x0/smart/filters:strip_icc()/s.glbimg.com/po/rc/media/2014/10/28/17_58_29_769_pastel_maria.jpg"
+            alt="Pastel de Carne com Calabresa"
+          />
+          <div>
+            <h3>Pastel de Carne</h3>
+            <p class="desc">
+              Carne de sol, calabresa fatiada, ketchup e maionese
+            </p>
+          </div>
+          <button class="botao" onclick="adicionarAoPedido('Pastel')">
+            Adicionar
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <h2>Bebidas</h2>
+      <div class="menu-items">
+        <article class="menu-item" data-item="cocacola">
+          <img
+            src="https://images.tcdn.com.br/img/img_prod/858764/refrigerante_coca_cola_lata_350ml_c_12_359_1_20201021152315.jpg"
+            alt="Coca-Cola"
+          />
+          <div>
+            <h3>Refrigerante Coca-Cola</h3>
+            <button class="botao" onclick="adicionarAoPedido('Coca-Cola')">
+              Adicionar Bebida
+            </button>
+          </div>
+        </article>
+
+        <article class="menu-item" data-item="agua">
+          <img
+            src="https://io.convertiez.com.br/m/trimais/shop/products/images/3174/medium/agua-mineral-natural-sem-gas-crystal-garrafa-500ml_3146.jpg"
+            alt="Água Mineral"
+          />
+          <div>
+            <h3>Água Mineral Sem Gás</h3>
+            <button class="botao" onclick="adicionarAoPedido('Água Mineral')">
+              Adicionar Bebida
+            </button>
+          </div>
+        </article>
+
+        <article class="menu-item" data-item="suco">
+          <img
+            src="https://naturalone.vteximg.com.br/arquivos/ids/157673/SUCO_DE_LARANJA_INTEGRAL_2L_REFRIGERADO_GARRAFA_RECICLAVEL_-_NATURAL_ONE-01.jpg?v=638210558436300000"
+            alt="Suco de Laranja"
+          />
+          <div>
+            <h3>Suco de Laranja</h3>
+            <button
+              class="botao"
+              onclick="adicionarAoPedido('Suco de Laranja')"
+            >
+              Adicionar Bebida
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="pedido-container hidden">
+      <hr />
+      <h2 class="seuPedido">Seu Pedido</h2>
+      <div class="saidaPedido">
+        <ul id="pedido"></ul>
+      </div>
+    </div>
+
+    <div>
+      <button class="botaof hidden" onclick="finalizarPedido()">
+        Finalizar Pedido
+      </button>
+    </div>
+
+    <footer class="footer">
+      <p>© 2024 Cardápio Online. Todos os direitos reservados.</p>
+      <p>Contato: contato@cardapioonline.com.br | Tel: (11) 4002-8922</p>
+    </footer>
+
+    <script>
+      const pedido = [];
+
+      function adicionarAoPedido(item) {
+        const pedidoContainer = document.querySelector(".pedido-container");
+        const finalizarButton = document.querySelector(".botaof");
+
+        if (pedido.length === 0) {
+          pedidoContainer.classList.remove("hidden");
+          finalizarButton.classList.remove("hidden");
+        }
+
+        const pedidoList = document.getElementById("pedido");
+        const novoItem = document.createElement("li");
+        novoItem.textContent = item;
+        pedidoList.appendChild(novoItem);
+
+        pedido.push({ item: item, quantidade: 1 });
+      }
+
+      async function finalizarPedido() {
+        try {
+          const response = await fetch("/api/pedidos", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(pedido),
+          });
+
+          if (response.ok) {
+            alert("Pedido enviado com sucesso!");
+          } else {
+            alert("Erro ao enviar o pedido.");
+          }
+        } catch (error) {
+          console.error("Erro:", error);
+          alert("Erro ao enviar o pedido.");
+        }
+      }
+    </script>
+  </body>
+</html>
